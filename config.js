@@ -4,7 +4,7 @@ const config = {
   db: {
     host: 'localhost',
     user: 'root',
-    password: 'imnottellingyou',
+    password: 'QF5DDGazjx1vOLbjPw7b5XirpaiBefI2',
     database: 'tasklist',
   },
 };
