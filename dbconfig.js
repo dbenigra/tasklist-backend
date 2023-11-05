@@ -4,10 +4,15 @@ const config = require('./config.js');
 
 // Create a database connection
 const dbConn = mysql.createConnection({
+  type: config.db.type,
   host: config.db.host,
+  port: config.db.port,
   user: config.db.user,
   password: config.db.password,
   database: config.db.database,
+  entities: [],
+  synchronize: true,
+  ssl: {}
 });
 
 // Open the MySQL connection
