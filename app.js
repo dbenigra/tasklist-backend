@@ -23,5 +23,5 @@ require('./routes/taskRoutes.js')(app);
 app.get('/', (request, response) => response.send('Working!...'));
 
 app.listen(config.port, () => {
-  console.log(`Server Listening on PORT: ${config.port}`);
+  console.log(`Server Listening on PORT: ${ config.port }`);
 });
