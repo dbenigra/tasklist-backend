@@ -8,13 +8,6 @@ app.use(express.json());
 app.use(cookieSession({
   keys: ['session'],
 }));
-app.use(
-  cors({
-    credentials: true,
-    origin: true
-  })
-);
-app.options('*', cors);
 
 // routes
 require('./routes/authRoutes.js')(app);
